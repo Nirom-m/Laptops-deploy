@@ -1,4 +1,4 @@
-package com.example.springdeploy;
+package com.example.springdeploy.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,6 @@ public class HelloController {
         System.out.println(message);
         return "Hi hi :D! have a great day!";
     }
-
     @GetMapping("/bootstrap")
     public String bootstrap() {
         return """
